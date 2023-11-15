@@ -5,9 +5,12 @@ import java.awt.Graphics;
 import java.awt.Dimension;
 import java.util.Random;
 
-class Pair {
+class Pair{
     public double x;
     public double y;
+
+    Pair mult;
+    Pair plus;
 
     public Pair(double setX, double setY) {
         this.x = setX;
@@ -36,27 +39,14 @@ class Pair {
 
     public void flipX() {
         this.x = -this.x;
-    }
-}
-
-class World {
-    int height;
-    int width;
-    
-    public World(int initWidth, int initHeight) {
-        width = initWidth;
-        height = initHeight;
-
-        }
+    }  
 }
 
 public class Plotter extends JPanel {
     public static final int WIDTH = 1024;
     public static final int HEIGHT = 768;
     public static final int FPS = 60;
-
-    
-    World world;
+    public World world;
 
     public void run() {
         while (true) {
@@ -71,7 +61,6 @@ public class Plotter extends JPanel {
     }
 
     public Plotter() {
-        
         world = new World(WIDTH, HEIGHT, 50);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
@@ -88,7 +77,8 @@ public class Plotter extends JPanel {
     }
 
     public void paintComponent(Graphics g) {
-        super.paintComponent(g);
+        super.paintComponent(g
+        world.draw();
         g.setColor(Color.WHITE);
         g.fillRect(0, 0, WIDTH, HEIGHT);
         //world.drawShapes(g);
