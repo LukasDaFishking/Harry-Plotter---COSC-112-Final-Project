@@ -9,10 +9,12 @@ public class Plotter extends JPanel {
     public static final int WIDTH = 1024;
     public static final int HEIGHT = 768;
     public static final int FPS = 60;
+    public static final Pair defaultCenter = new Pair (0,0);
     public World world;
 
     public void run() {
         while (true) {
+            //This may be neccessary for zoom and pan, but not for the minimum viable product
             //world.updateShapes(1.0 / (double) FPS);
             //repaint();
             try {
@@ -24,7 +26,7 @@ public class Plotter extends JPanel {
     }
 
     public Plotter() {
-        world = new World(WIDTH, HEIGHT, 50);
+        world = new World(WIDTH, HEIGHT, 1, defaultCenter, //ADD POINTS HERE);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
 
