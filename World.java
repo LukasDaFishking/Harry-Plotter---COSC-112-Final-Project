@@ -9,7 +9,7 @@ class World{
   //The default scale of the image
   public final int defaultScale = 1;
   
-        public World(int scale, Pair center, ArrayList<Point> points){
+        public World(int width, int height, int scale, Pair center, ArrayList<Point> points){
         this.points = points;
         this.center = center;
         this.scale = scale;
