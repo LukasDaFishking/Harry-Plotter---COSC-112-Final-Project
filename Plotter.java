@@ -76,7 +76,7 @@ public class Plotter extends JPanel {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Harry Plotter");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        OOBouncing mainInstance = new OOBouncing();
+        Plotter mainInstance = new Plotter();
         frame.setContentPane(mainInstance);
         frame.pack();
         frame.setVisible(true);
