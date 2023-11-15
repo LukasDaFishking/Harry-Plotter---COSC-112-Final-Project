@@ -42,8 +42,8 @@ class Pair {
 class World {
     int height;
     int width;
-
-    public World(int initWidth, int initHeight, int initNumShapes) {
+    
+    public World(int initWidth, int initHeight) {
         width = initWidth;
         height = initHeight;
 
@@ -54,6 +54,8 @@ public class Plotter extends JPanel {
     public static final int WIDTH = 1024;
     public static final int HEIGHT = 768;
     public static final int FPS = 60;
+
+    
     World world;
 
     public void run() {
@@ -69,6 +71,7 @@ public class Plotter extends JPanel {
     }
 
     public Plotter() {
+        
         world = new World(WIDTH, HEIGHT, 50);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
@@ -86,7 +89,7 @@ public class Plotter extends JPanel {
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.setColor(Color.BLACK);
+        g.setColor(Color.WHITE);
         g.fillRect(0, 0, WIDTH, HEIGHT);
         //world.drawShapes(g);
     }
