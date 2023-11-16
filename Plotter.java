@@ -42,7 +42,8 @@ public class Plotter extends JPanel {
     }
 
     public void paintComponent(Graphics g) {
-        super.paintComponent(g
+        super.paintComponent(g);
+        //BELOW... Is this compatable with the draw method in world?
         world.draw();
         g.setColor(Color.WHITE);
         g.fillRect(0, 0, WIDTH, HEIGHT);
