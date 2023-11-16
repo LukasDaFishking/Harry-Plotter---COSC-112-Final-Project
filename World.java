@@ -10,13 +10,14 @@ class World{
   public final int defaultScale = 1;
   
         public World(int width, int height, int scale, Pair center, ArrayList<Point> points){
+         //Constructor for if the arraylist of points is specified
         this.points = points;
         this.center = center;
         this.scale = scale;
         }
   
-        public World(){
-        //Creating an arbitrary, default array of points to draw when none are specified
+        public World(int width, int height, int scale, Pair center){
+        //Creating an arbitrary, default arraylist of points to draw when none are specified
         ArrayList<Points> p = new ArrayList<Point>
         Point l = new Point (0,0)
         Point k = new Point (10,1)
