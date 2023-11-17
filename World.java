@@ -19,15 +19,15 @@ class World{
         public World(int width, int height, int scale, Pair center){
         //Creating an arbitrary, default arraylist of points to draw when none are specified
         ArrayList<Points> p = new ArrayList<Point>
-        Point l = new Point (0,0)
-        Point k = new Point (10,1)
-        Point j = new Point (2, -3)
+        Point l = new Point (0,0);
+        Point k = new Point (10,1);
+        Point j = new Point (2, -3);
         p.add(l);
         p.add(k);
         p.add(j);
 
         //Creates a point to feed in as the default center
-        Pair c = (0,0);
+        Pair c = new Pair(0,0);
 
         this.points = p; 
         this.center = c;
@@ -44,7 +44,7 @@ class World{
         //There may be an error with how this works syntactically.
         //The intent is to draw every element of the array list
         public void draw(Graphics g){
-          for(0 : points){
+          for(point : points){
           points.draw(g)
           }
           //Commented out until curves are implimented
