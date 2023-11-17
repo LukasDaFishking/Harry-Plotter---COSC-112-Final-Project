@@ -28,7 +28,7 @@ public class Plotter extends JPanel {
     public Plotter() {
         //Calls the constructor which doesnt take an arraylist in world
         world = new World(WIDTH, HEIGHT, 1, defaultCenter);
-        this.setPreferredSize(new Dimension(WIDTH, HEIGHT);
+        this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
 
     public static void main(String[] args) {
