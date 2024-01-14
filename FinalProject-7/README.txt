@@ -1,6 +1,6 @@
 "Harry Plotter" by Jamie Kelsey, Lukas Luby-Prikot, and Jonah McDonald
 
-This project is our curve plotter that we plan to focus on elliptic curves.
+This project is a graphing calculator which specializes in plotting eliptical curve.
 
 To compile run javac Main.java
 To run, run java Main
