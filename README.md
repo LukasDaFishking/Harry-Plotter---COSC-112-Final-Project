@@ -1,4 +1,4 @@
-"Harry Plotter" by Jamie Kelsey, Lukas Luby-Prikot, and Jonah McDonald
+"Harry Plotter" by Lukas Luby-Prikot, Jamie Kelsey, and Jonah McDonald
 
 This project is a graphing calculator which specializes in plotting eliptical curve.
 
